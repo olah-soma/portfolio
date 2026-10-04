@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Soma Oláh — machine learning, scientific computing, weather and Earth sciences.">
+  <meta name="theme-color" content="#f4f8f7">
+  <title>Soma Oláh | Machine Learning × Weather & Earth Sciences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <canvas id="weather-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Soma Oláh — home">SO<span>.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Machine Learning · Scientific Computing · Geoscience</p>
+        <h1 id="hero-title">Machine Learning <span>×</span><br>Weather & Earth Sciences</h1>
+        <p class="hero-name">Soma Oláh</p>
+        <p class="hero-lead">I develop data-driven solutions for weather forecasting and Earth sciences, combining domain knowledge with machine learning, scientific Python and operational computing.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work</a>
+          <a class="button ghost" href="#contact">Let's connect</a>
+        </div>
+        <div class="hero-meta" aria-label="Professional focus">
+          <span>Budapest, Hungary</span><span>Weather ML</span><span>Earth observation</span>
+        </div>
+      </div>
+      <div class="portrait-wrap reveal">
+        <div class="portrait-frame">
+          <img src="assets/images/profile.jpg" alt="Portrait of Soma Oláh">
+        </div>
+        <div class="portrait-note"><span class="status-dot"></span> Open to ML / Data Science opportunities</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / Profile</p>
+        <h2 id="about-title">Where physical science meets data.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="large-copy">My background spans geophysics, meteorology-oriented machine learning and software development. I work best on problems where understanding the physical system is as important as building the computational solution.</p>
+        </div>
+        <div class="focus-cards reveal">
+          <article><span>01</span><h3>Machine Learning</h3><p>Deep learning, model development, evaluation and data-driven forecasting.</p></article>
+          <article><span>02</span><h3>Weather & Earth Science</h3><p>Atmospheric science, geophysics, hydrogeology, remote sensing and NWP.</p></article>
+          <article><span>03</span><h3>Scientific Computing</h3><p>Large geoscientific datasets, reproducible analysis and operational workflows in cloud and GPU environments.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Current work</p>
+        <h2 id="work-title">Applied science, from research to operations.</h2>
+      </div>
+
+      <article class="feature-card reveal">
+        <div class="feature-visual photo-visual">
+          <img src="assets/images/conference.jpg" alt="Soma Oláh beside his solar nowcasting conference poster">
+        </div>
+        <div class="feature-copy">
+          <p class="card-kicker">Current work · HungaroMet · 2024—present</p>
+          <h3>Deep-learning based solar nowcasting</h3>
+          <p>I contribute to the development of a machine-learning-based solar nowcasting system at HungaroMet, working with satellite observations, numerical weather prediction data and scientific ML workflows.</p>
+          <div class="tag-row">
+			<span>PyTorch</span>
+			<span>xarray</span>
+			<span>Satellite data processing</span>
+			<span>MLWP</span>
+			<span>NetCDF / Zarr</span>
+			<span>Data visualization</span>
+			<span>Model verification</span>
+			<span>Explainable AI</span>
+		  </div>
+          <button class="text-button" data-modal-open="poster-modal">View conference poster <span>↗</span></button>
+        </div>
+      </article>
+
+      <article class="feature-card reverse reveal">
+        <div class="feature-visual research-visual" aria-hidden="true">
+          <div class="research-visual-inner"><span>Geoscience research</span><strong>Numerical modelling · GIS · Field geophysics</strong><small>Hydrogeology & groundwater-flow systems</small></div>
+        </div>
+        <div class="feature-copy">
+          <p class="card-kicker">Research foundation · ELTE, Budapest · 2022—2024</p>
+          <h3>Hydrogeology, numerical modelling & geospatial analysis</h3>
+          <p>As a researcher in the Climate Change Multidisciplinary National Laboratory project, I worked on groundwater-flow and hydrogeological problems through numerical modelling, field geophysical measurements, GIS and scientific data analysis.</p>
+          <p>I also contributed to the conceptual development and scientific communication of NaBa-MAR® (Nature-Based Managed Aquifer Recharge), an ELTE innovation connecting managed aquifer recharge with groundwater-flow systems.</p>
+          <div class="tag-row"><span>Numerical modelling</span><span>GIS</span><span>Geophysics</span><span>Hydrogeology</span><span>Data analysis</span></div>
+          <a class="text-button" href="https://nabamar.elte.hu/english.html" target="_blank" rel="noopener">Explore NaBa-MAR® <span>↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section expertise" aria-labelledby="expertise-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / Technical expertise</p>
+        <h2 id="expertise-title">Technical skills & tools.</h2>
+      </div>
+      <div class="expertise-grid reveal">
+        <article><h3>ML & Data Science</h3><p>PyTorch · Deep Learning · ConvLSTM · Model Evaluation · pandas · NumPy · R</p></article>
+        <article><h3>Scientific Computing</h3><p>Python · xarray · NetCDF4 · Zarr · GDAL · Matplotlib · hvPlot</p></article>
+        <article><h3>Weather & Geoscience</h3><p>Satellite Data · NWP · Nowcasting · Remote Sensing · Geophysics · Hydrogeology · GIS</p></article>
+        <article><h3>Engineering & Operations</h3><p>Linux · Git · Cloud · HPC/GPU · S3 · ecFlow · Operational Data Pipelines</p></article>
+      </div>
+      <p class="secondary-stack reveal"><strong>Additional experience:</strong> R, SQL, MATLAB, Bash, Java, C/C++, C#, JavaScript and other programming languages.</p>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / Experience</p>
+        <h2 id="experience-title">My path</h2>
+      </div>
+      <div class="career-line reveal">
+        <article class="career-item current">
+          <div class="career-year">2024—now</div>
+          <div><p class="card-kicker">HungaroMet Hungarian Meteorological Service · Budapest, Hungary</p><h3>Machine Learning Model Developer</h3><p>Machine-learning nowcasting, large satellite and NWP datasets, scientific Python, cloud/HPC computing and operational ML workflows.</p></div>
+        </article>
+        <article class="career-item">
+          <div class="career-year">2022—2024</div>
+          <div><p class="card-kicker">Climate Change Multidisciplinary National Laboratory · Budapest, Hungary</p><h3>Researcher</h3><p>Groundwater-flow research, numerical modelling, field geophysics, GIS and hydrogeological data analysis.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 / Scientific activity</p>
+        <h2 id="timeline-title">Conferences, presentations & recognition.</h2>
+      </div>
+      <div class="year-tabs reveal" role="tablist" aria-label="Filter events by year">
+        <button class="year-tab active" data-year="2026">2026</button><button class="year-tab" data-year="2025">2025</button><button class="year-tab" data-year="2024">2024</button><button class="year-tab" data-year="2023">2023</button>
+      </div>
+      <div class="event-list reveal" aria-live="polite"></div>
+    </section>
+
+    <section class="section education" aria-labelledby="education-title">
+      <div class="section-heading reveal"><p class="eyebrow">06 / Education</p><h2 id="education-title">Geophysics → Computer Science → ML for Weather.</h2></div>
+      <div class="education-layout reveal">
+        <div class="education-block">
+          <h3 class="education-label">University education</h3>
+          <div class="education-line">
+            <article class="education-item current"><div class="education-year">2022—present</div><div><p class="card-kicker">Eötvös Loránd University (ELTE) · Budapest, Hungary</p><h3>BSc in Computer Science</h3><p>Faculty of Informatics · Software Development specialisation</p></div></article>
+            <article class="education-item"><div class="education-year">2019—2022</div><div><p class="card-kicker">Eötvös Loránd University (ELTE) · Budapest, Hungary</p><h3>BSc in Earth Sciences</h3><p>Faculty of Science · Geophysics specialisation</p></div></article>
+          </div>
+        </div>
+        <div class="training-block">
+          <h3 class="education-label">Professional training</h3>
+          <article class="training-card"><p class="card-kicker">2025 · Reading, United Kingdom</p><h3>Machine Learning in Weather Prediction</h3><p>European Centre for Medium-Range Weather Forecasts (ECMWF)</p></article>
+          <article class="training-card"><p class="card-kicker">Selected training</p><h3>Further professional development</h3><p>ECMWF Machine Learning for Earth System Modelling · PyTorch training · Advanced Python training · Git training</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section community" aria-labelledby="community-title">
+      <div class="section-heading reveal"><p class="eyebrow">07 / Community</p><h2 id="community-title">Connected to the European geoscience community.</h2></div>
+      <div class="community-row reveal"><a href="https://www.egu.eu/" target="_blank" rel="noopener">European Geosciences Union <span>↗</span></a><a href="http://www.mettars.hu/" target="_blank" rel="noopener">Hungarian Meteorological Society <span>↗</span></a><a href="https://github.com/mlcast-community" target="_blank" rel="noopener">MLCast Community <span>↗</span></a></div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow reveal">08 / Contact</p>
+      <h2 id="contact-title" class="reveal">Let's connect.</h2>
+      <p class="contact-copy reveal">I'm interested in opportunities at the intersection of <strong>machine learning, weather and Earth sciences</strong>. If you work on weather intelligence, ML-based forecasting, Earth observation or scientific computing, I'd be happy to talk.</p>
+      <div class="contact-actions reveal">
+        <a class="button primary" href="mailto:olh.soma@gmail.com">Email me</a>
+        <a class="button ghost" href="https://www.linkedin.com/in/soma-olah-2244161b9" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button ghost" href="https://github.com/olah-soma" target="_blank" rel="noopener">GitHub</a>
+        <a class="button ghost" href="assets/docs/Soma_Olah_CV.pdf" data-cv-link>Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Soma Oláh</span><button class="back-to-top" type="button" data-back-to-top>Back to top ↑</button></footer>
+
+  <dialog class="poster-modal" id="poster-modal">
+    <div class="modal-bar"><div><strong>Deep-learning based solar nowcasting</strong><small>Conference poster</small></div><button data-modal-close aria-label="Close poster">×</button></div>
+    <div class="poster-scroll"><img src="assets/images/solar-nowcasting-poster.png" alt="Conference poster: Deep learning based solar nowcasting system combining satellite observations and NWP data"></div>
+  </dialog>
+</body>
+</html>
