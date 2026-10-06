@@ -38,8 +38,6 @@ document.querySelectorAll('[data-modal-open]').forEach(btn=>btn.addEventListener
 document.querySelectorAll('[data-modal-close]').forEach(btn=>btn.addEventListener('click',()=>btn.closest('dialog').close()));
 document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d)d.close()}));
 
-const cv=document.querySelector('[data-cv-link]');cv.addEventListener('click',async e=>{try{const r=await fetch(cv.href,{method:'HEAD'});if(!r.ok)throw 0}catch{e.preventDefault();alert('Add your CV as assets/docs/Soma_Olah_CV.pdf to enable this button.')}});
-
 document.getElementById('year').textContent=new Date().getFullYear();
 const backToTop=document.querySelector('[data-back-to-top]');if(backToTop){backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));}
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
